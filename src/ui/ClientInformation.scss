@@ -1,0 +1,94 @@
+@import '../scss/framework';
+
+.client-info {
+  width: 100%;
+  float: left;
+  // padding: 3rem 0 7rem 0;
+  @include large-laptop-up {
+    width: 50%;
+    p {
+      line-height: 1.75;
+    }
+  }
+  @include large-desktop-up {
+
+    // padding: 3rem 0 7rem 0;
+    h3 {
+      font-size: 2rem;
+    }
+
+    h4 {
+      font-size: 1.5rem;
+    }
+
+    p {
+      font-size: 1.5rem;
+    }
+  }
+  h3, h4, p {
+    // padding: 0 1rem;
+    color: white;
+    float: left;
+    width: 100%;
+  }
+
+  h3 {
+    font-weight: 100;
+    font-size: 1.5rem;
+  }
+
+  h4 {
+    font-weight: 600;
+  }
+
+  p {
+    font-weight: 300;
+    margin: 0.6rem 0rem;
+  }
+
+  .client-info-content {
+    float: left;
+    padding: 5rem 1rem;
+    @include tablet-up {
+      padding: 7rem 6rem;
+    }
+    @include desktop-up {
+      padding: 7rem 12rem;
+    }
+    @include large-desktop-up {
+      padding: 7rem 16rem;
+    }
+    
+
+  }
+
+  .client-info-stack {
+    // padding: 0 1rem;
+    float: left;
+    @include tablet-up {
+      // padding: 0 6rem;
+    }
+
+    .client-info-technology {
+      margin: 0 0.5rem 0.7rem 0;
+      padding: 0.5rem 0.75rem;
+      background: white;
+      border-radius: 0;
+      color: black;
+      font-weight: 300;
+      float: left;
+    }
+  }
+}
+
+.client-info-image {
+  margin: 0 0 4rem;
+  display: flex;
+  flex-direction: column;
+
+  img {
+    align-self: center;
+    width: 250px;
+  }
+  
+}
