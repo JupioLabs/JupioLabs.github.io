@@ -24,6 +24,7 @@
   "devDependencies": {
     "@types/react-helmet": "^5.0.7",
     "gatsby-plugin-google-fonts": "0.0.4",
+    "gatsby-plugin-react-helmet": "^3.0.2",
     "gatsby-plugin-tslint": "^0.0.1",
     "gh-pages": "^2.0.1",
     "tslint": "^5.11.0",

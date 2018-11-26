@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    name: `Jupio Labs`,
+    name: `Jupio Media`,
     tagline: `Your Innovation Partner`,
-    description: `At Jupio Labs we bring our clients to the modern web, using agile & lean approaches to development and design.`,
+    description: `At Jupio Media we bring our clients to the modern web, using agile & lean approaches to development and design.`,
     keywords: [
       'HTML',
       'CSS',
@@ -19,12 +19,12 @@ module.exports = {
     ],
     author: 'Jupio Media Inc.',
     canonicalLink: `https://jupio.co/`
+  },
 
-
-  },  
   plugins: [
     `gatsby-plugin-sass`,
     `gatsby-plugin-typescript`,
+    `gatsby-plugin-react-helmet`,
     // `gatsby-plugin-tslint`,
     {
       resolve: `gatsby-plugin-google-fonts`,

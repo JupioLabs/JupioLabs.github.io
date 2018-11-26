@@ -2,15 +2,17 @@ import { graphql } from 'gatsby';
 import * as React from 'react';
 import { Helmet } from 'react-helmet';
 
-// import * as styles from './Index.module.scss';
-import './index.scss';
-import '../scss/global.scss';
-
 import { Introduction } from '../components/Introduction.React';
 import { PastClients } from '../components/PastClients.React';
 import { Contact } from '../components/Contact.React';
 import { Footer } from '../components/Footer.React';
 import { Layout } from '../components/Layout.React';
+
+// import * as styles from './Index.module.scss';
+import './index.scss';
+import '../scss/global.scss';
+
+import socialMediaCard from '../static/img/social-media-card.jpg';
 
 interface IndexPageProps {
   data: {
@@ -68,7 +70,7 @@ export default class IndexPage extends React.Component<IndexPageProps, {}> {
             
             <meta property="og:title" content={name} />
             <meta property="og:description" content={description} />
-            <meta property="og:image" content="../static/img/social-media-card.jpg" />
+            <meta property="og:image" content={socialMediaCard} />
             <meta property="og:url" content={canonicalLink} />
         </Helmet>
         <Introduction />
