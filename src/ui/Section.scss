@@ -1,0 +1,17 @@
+.section {
+  float: left;
+  width: 100%;
+  height: auto;
+
+  &-container {
+    background: white;
+    height: 100%;
+    padding: 2rem 1rem;
+    display: flex;
+  }
+
+  &.full-height-true {
+    height: 100%;
+  }
+  
+}

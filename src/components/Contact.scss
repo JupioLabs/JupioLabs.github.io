@@ -1,0 +1,84 @@
+@import '../scss/framework';
+
+.contact {
+  // background: url(https://i.imgur.com/rwadEk1.jpg);
+  background: url(https://images.unsplash.com/photo-1482062364825-616fd23b8fc1?ixlib=rb-0.3.5&s=2d5a29bf54756acf6d32c46cdf60a63d&auto=format&fit=crop&w=2700&q=80);
+  background-size: cover;
+  background-position: bottom;
+  height: 650px;
+  padding: 0;
+
+  @include large-desktop-up {
+    height: 750px;
+  }
+
+  .contact-container {
+    background: rgba(255,255,255,0.6);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-flow: column;
+  }
+  .contact-title {
+    padding: 4rem 0 0 0;
+    align-self: center;
+    h2 {
+      width: 100%;
+      text-align: center;
+      @include large-desktop-up {
+        font-size: 5rem;
+      }
+    }
+    
+  }
+
+  .contact-information {
+    max-width: 600px;
+    width: fit-content;
+    display: flex;
+    align-self: center;
+  }
+  .contact-card {
+    background: #fffffff5;
+    text-align: center;
+    margin: 1rem 0;
+    width: 230px;
+    display: flex;
+    flex-direction: column;
+
+    @include tablet-up {
+      padding: 3.5rem;
+      width: 100%;
+    }
+
+    .contact-card-details {
+      font-weight: 100;
+      font-size: 2.5rem;
+      @include large-desktop-up {
+        font-size: 2rem;
+      }
+    }
+
+    .contact-card-email {
+      a {
+        text-decoration: none;
+        color: #4c4c4c;
+        font-weight: 300;
+        font-size: 1.4rem;
+        letter-spacing: 0.1rem;
+
+        @include tablet-up {
+          font-size: 2rem;
+        }
+
+        @include large-desktop-up {
+          font-size: 3rem;
+        }
+
+      }
+    }
+  }
+
+}
+
+  
