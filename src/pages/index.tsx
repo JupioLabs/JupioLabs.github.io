@@ -18,6 +18,10 @@ interface IndexPageProps {
       siteMetadata: {
         name: string;
         tagline: string;
+        description: string;
+        keywords: string[];
+        author: string;
+        canonicalLink: string;
       },
     },
   };
@@ -29,6 +33,10 @@ export const indexPageQuery = graphql`
       siteMetadata {
         name
         tagline
+        description
+        keywords
+        author
+        canonicalLink
       }
     }
   }
@@ -37,17 +45,31 @@ export const indexPageQuery = graphql`
 export default class IndexPage extends React.Component<IndexPageProps, {}> {
 
   public render() {
-    const { name, tagline } = this.props.data.site.siteMetadata;
+    const {
+      name,
+      tagline,
+      description,
+      keywords,
+      author,
+      canonicalLink
+    } = this.props.data.site.siteMetadata;
     return (
       <Layout>
         <Helmet>
             <meta charSet="utf-8" />
-            <title>{name}</title>
-            <link rel="canonical" href="http://mysite.com/example" />
-            <meta name="description" content="Free Web tutorials"></meta>
-            <meta name="keywords" content="HTML,CSS,ReactJS,NodeJS,Node,React,Agile,Lean,UX,UI,ES6,JavaScript" />
-            <meta name="author" content="Jupio Media Inc." />
             <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+            <title>{name} | {tagline}</title>
+            
+            <link rel="canonical" href={canonicalLink} />
+            <meta name="description" content={description}></meta>
+            <meta name="keywords" content={keywords.join(',')} />
+            <meta name="author" content={author} />
+            
+            <meta property="og:title" content={name} />
+            <meta property="og:description" content={description} />
+            <meta property="og:image" content="../static/img/social-media-card.jpg" />
+            <meta property="og:url" content={canonicalLink} />
         </Helmet>
         <Introduction />
         <PastClients />
