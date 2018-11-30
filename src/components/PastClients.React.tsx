@@ -4,6 +4,9 @@ import { Section } from '../ui/Section.React';
 import { SectionTitle } from '../ui/SectionTitle.React';
 import './PastClients.scss';
 
+import logoLinda from '../static/img/logo-lindajeffrey.png';
+import logoDocorg from '../static/img/logo-docorg.png';
+
 interface PastClientsProps {}
 
 export const PastClients: React.SFC<PastClientsProps> = () => {
@@ -15,7 +18,7 @@ export const PastClients: React.SFC<PastClientsProps> = () => {
         </div>
         <div className='past-clients-information'>
           <ClientInformation
-            image='https://i.imgur.com/qH5o1dz.png'
+            image={logoDocorg}
             imagePosition='right'
             stack={[
               'UI Design',
@@ -75,7 +78,7 @@ export const PastClients: React.SFC<PastClientsProps> = () => {
             </p>
           </ClientInformation>
           <ClientInformation
-            image='https://i.imgur.com/c8zi3I2.png'
+            image={logoLinda}
             imagePosition='right'
             stack={[
               'UI/UX Design',

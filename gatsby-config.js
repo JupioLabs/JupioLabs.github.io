@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    name: `Jupio Media`,
+    name: `Jupio Labs`,
     tagline: `Your Innovation Partner`,
-    description: `At Jupio Media we bring our clients to the modern web, using agile & lean approaches to development and design.`,
+    description: `At Jupio Labs we bring our clients to the modern web, using agile & lean approaches to development and design.`,
     keywords: [
       'HTML',
       'CSS',

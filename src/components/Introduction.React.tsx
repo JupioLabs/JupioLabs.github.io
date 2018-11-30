@@ -14,7 +14,7 @@ export const Introduction: React.SFC<IntroductionProps> = () => {
             <SectionTitle>Your Innovation Partner</SectionTitle>
           </div>
           <div className='intro-text'>
-            At Jupio Media we bring our clients to the
+            At Jupio Labs we bring our clients to the
             modern web, using agile & lean approaches
             to development and design
           </div>

@@ -43,7 +43,7 @@ export class Navigation extends React.Component<NavigationProps, NavigationState
       </div>
       <div className='diamond-shape' /> */}
       <h1 className='jupio-wordmark'>
-        JUPIO MEDIA
+        JUPIO LABS
       </h1>
     </nav>
     );
