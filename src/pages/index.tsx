@@ -13,17 +13,13 @@ import './index.scss';
 import '../scss/global.scss';
 
 import socialMediaCard from '../static/img/social-media-card.jpg';
+import { SiteMetaData } from '../types/SiteMetaData';
 
 interface IndexPageProps {
   data: {
     site: {
       siteMetadata: {
-        name: string;
-        tagline: string;
-        description: string;
-        keywords: string[];
-        author: string;
-        canonicalLink: string;
+        index: SiteMetaData;
       },
     },
   };
@@ -33,12 +29,14 @@ export const indexPageQuery = graphql`
   query IndexPageQuery {
     site {
       siteMetadata {
-        name
-        tagline
-        description
-        keywords
-        author
-        canonicalLink
+        index {
+          name
+          tagline
+          description
+          keywords
+          author
+          canonicalLink
+        }
       }
     }
   }
@@ -54,7 +52,7 @@ export default class IndexPage extends React.Component<IndexPageProps, {}> {
       keywords,
       author,
       canonicalLink
-    } = this.props.data.site.siteMetadata;
+    } = this.props.data.site.siteMetadata.index;
     return (
       <Layout>
         <Helmet>

@@ -1,25 +1,59 @@
 module.exports = {
+
+
   siteMetadata: {
-    name: `Jupio Labs`,
-    tagline: `Your Innovation Partner`,
-    description: `At Jupio Labs we bring our clients to the modern web, using agile & lean approaches to development and design.`,
-    keywords: [
-      'HTML',
-      'CSS',
-      'ReactJS',
-      'NodeJS',
-      'Node',
-      'React',
-      'Agile',
-      'Lean',
-      'UX',
-      'UI',
-      'ES6',
-      'JavaScript',
-    ],
-    author: 'Jupio Media Inc.',
-    canonicalLink: `https://jupio.co/`
+    // Home Page 
+
+    index: {
+      name: `Jupio Labs`,
+      tagline: `Your Innovation Partner`,
+      description: `At Jupio Labs we bring our clients to the modern web, using agile & lean approaches to development and design.`,
+      keywords: [
+        'HTML',
+        'CSS',
+        'ReactJS',
+        'NodeJS',
+        'Node',
+        'React',
+        'Agile',
+        'Lean',
+        'UX',
+        'UI',
+        'ES6',
+        'JavaScript',
+      ],
+      author: 'Jupio Media Inc.',
+      canonicalLink: `https://www.jupiolabs.com/`,
+    },
+
+    // Other Pages
+
+    privacyPolicy: {
+      name: `Jupio Labs`,
+      tagline: `Privacy Policy`,
+      description: `At Jupio Labs we bring our clients to the modern web, using agile & lean approaches to development and design.`,
+      keywords: [
+        'HTML',
+        'CSS',
+        'ReactJS',
+        'NodeJS',
+        'Node',
+        'React',
+        'Agile',
+        'Lean',
+        'UX',
+        'UI',
+        'ES6',
+        'JavaScript',
+      ],
+      author: 'Jupio Media Inc.',
+      canonicalLink: `https://www.jupiolabs.com/privacy-policy`
+    },
+
+
   },
+
+  
 
   plugins: [
     `gatsby-plugin-sass`,
