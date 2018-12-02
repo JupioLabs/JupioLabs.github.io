@@ -1,8 +1,10 @@
-@import '../scss/framework';
+@import "../scss/framework";
 
 .privacy-policy {
+  &.main-container {
+    height: auto;
+  }
   background: #020202;
-  height: auto;
   float: left;
   padding: 0 0 4rem 0;
 
@@ -10,7 +12,13 @@
     padding: 0 0 9rem 0;
   }
 
-  p, h1, h2, h3, h4, ul, li {
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  ul,
+  li {
     color: white;
   }
 
@@ -65,18 +73,12 @@
       padding: 0 40rem;
     }
 
-
-
-    
     a {
       color: white;
     }
-
   }
 
   .back-button {
     padding: 2rem 0;
   }
-
 }
-
