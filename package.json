@@ -5,9 +5,9 @@
   "version": "1.1.1",
   "scripts": {
     "develop": "gatsby develop",
-    "build": "gatsby build && cpx CNAME /public",
+    "build": "gatsby build && cpx ./CNAME ./public",
     "serve": "gatsby serve",
-    "deploy": "gatsby build && gh-pages -d public -b master"
+    "deploy": "npm run build && gh-pages -d public -b master"
   },
   "dependencies": {
     "@babel/core": "^7.1.2",
