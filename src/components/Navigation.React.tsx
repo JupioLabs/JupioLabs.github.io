@@ -1,4 +1,6 @@
 import * as React from 'react';
+import { Link } from 'gatsby';
+
 import { connect } from 'react-redux';
 import { Hamburger } from '../ui/Hamburger.React';
 import './Navigation.scss';
@@ -42,9 +44,11 @@ export class Navigation extends React.Component<NavigationProps, NavigationState
         <Hamburger clickHandler={this.toggleHandler()} />
       </div>
       <div className='diamond-shape' /> */}
-      <h1 className='jupio-wordmark'>
-        JUPIO LABS
-      </h1>
+      <Link to="/">
+        <h1 className='jupio-wordmark'>
+          JUPIO LABS
+        </h1>
+      </Link>
     </nav>
     );
   }
