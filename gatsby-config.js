@@ -67,6 +67,24 @@ module.exports = {
           `Roboto\:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i` // you can also specify font weights and styles
         ]
       }
-    }
+    }, 
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-125456641-3",
+        // Puts tracking script in the head instead of the body
+        head: false,
+        // Setting this parameter is optional
+        anonymize: true,
+        // Setting this parameter is also optional
+        respectDNT: true,
+        // Enables Google Optimize using your container Id
+        // optimizeId: "YOUR_GOOGLE_OPTIMIZE_TRACKING_ID",
+        // // Any additional create only fields (optional)
+        // sampleRate: 5,
+        // siteSpeedSampleRate: 10,
+        // cookieDomain: "jupiolabs.com",
+      },
+    },
   ],
 }
