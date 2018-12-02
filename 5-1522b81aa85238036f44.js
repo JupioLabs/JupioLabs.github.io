@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[5],{126:function(p){p.exports={pages:[{componentChunkName:"component---src-pages-index-tsx",jsonName:"index",path:"/"},{componentChunkName:"component---src-pages-privacy-policy-tsx",jsonName:"privacy-policy-6b7",path:"/privacy-policy/"}],dataPaths:{index:"548/path---index-6a9-QMC55OIdHIDqaFNn9UNMtcw7Slk","privacy-policy-6b7":"153/path---privacy-policy-6-b-7-610-wwdxQwVHpT1LLXHOJC2aNIpfg"}}}}]);
+//# sourceMappingURL=5-1522b81aa85238036f44.js.map
